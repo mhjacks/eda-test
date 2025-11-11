@@ -8,7 +8,7 @@
           password: "{{ snow_password | default(omit) }}"
           timeout: 60
         table: incident
-        remote_servicenow_timezone: US/Central
+        # remote_servicenow_timezone: US/Central
   rules:
     - name: New record created
       condition: event.sys_id is defined
